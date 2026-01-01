@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+   <header>
+      <nav>
+          <div class="navbar">
+            <div class="menu">
+                 <i class="fa-solid fa-bars menuBar" style="display: none;"></i>
+                 <img src="images/logo.svg" alt="">
+            </div>
+             <ul class="navlinks">
+                 <li class="link">Collections</li>
+                 <li class="link">Men</li>
+                 <li class="link">Woman</li>
+                 <li class="link">About</li>
+                 <li class="link">Contact</li>
+             </ul>
+          </div>
+          <div class="profile">
+              <div class="cartIconContainer">
+                  <img class="cartIcon" src="images/icon-cart.svg" alt="">
+                  <div class="Qty hidden">3</div>
+              </div>
+             <img class="user" src="images/image-avatar.png" alt="">
+             <div class="cart hidden">
+             <h3>Cart</h3>
+             <hr style="color: hsl(220, 14%, 75%);">
+             <div class="cartContainer">
+                 <p class="empty">Your Cart is empty</p>
+                 <button class="CheckoutBtn hidden">Checkout</button>
+             </div>
+          </div>
+          </div>
+      </nav>
+   </header>
+   <main>
+      <div class="productSlider">
+        <div class="currentImg">
+            <i class="fa-solid fa-circle-arrow-left left2" style="display: none;"></i>
+            <img class="mainImg" src="images/image-product-1.jpg" alt="">
+            <i class="fa-solid fa-circle-arrow-right right2" style="display: none;"></i>
+        </div>
+        <div class="images">
+            <img class="active" src="images/image-product-1-thumbnail.jpg" alt="">
+            <img src="images/image-product-2-thumbnail.jpg" alt="">
+            <img src="images/image-product-3-thumbnail.jpg" alt="">
+            <img src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+      <div class="productInfo">
+        <h4>SNEAKER COMPANY</h4>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="price"><span>$125.00</span><div class="promotion">50%</div></div>
+        <h3>$250.00</h3>
+        <div class="buttons">
+             <div class="quantitySelector">
+                <button class="decrement">-</button>
+                <p class="quantity">1</p>
+                <button class="increment">+</button>
+             </div>
+             <button class="addToCart"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+          </div>
+        </div>
+      <div class="overlay hidden">
+        <div class="mainOverlay">
+          <i class="fa-solid fa-circle-arrow-left left"></i>
+          <img class="overlayMainImg" src="images/image-product-1.jpg" alt="">
+          <i class="fa-solid fa-circle-arrow-right right"></i>
+          <i class="fas fa-window-close close"></i>
+        </div>
+        <div class="imgSelector">
+            <img class="active" src="images/image-product-1-thumbnail.jpg" alt="">
+            <img src="images/image-product-2-thumbnail.jpg" alt="">
+            <img src="images/image-product-3-thumbnail.jpg" alt="">
+            <img src="images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </div>
+      <div class="menuList">
+        <i class="fa-solid fa-xmark"></i>
+         <ul>
+                 <li class="link">Collections</li>
+                 <li class="link">Men</li>
+                 <li class="link">Woman</li>
+                 <li class="link">About</li>
+                 <li class="link">Contact</li>
+             </ul>
+      </div>
+   </main>
+   <script src="script.js"></script>
+</body>
+</html>
